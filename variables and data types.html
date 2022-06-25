@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Variables and Data Types</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    Variables and Data Types<br />
+
+    Evite usar var para declarar variaveis em vez disso use const <br />
+
+    Exemplo: <br />
+    <script>
+      //define age
+      const age = 18;
+      document.write("My age is" + " " + age);
+      //chama um prompt pra digitar o nome
+      const myName = prompt("Enter your name");
+      document.write("My name is" + " " + myName);
+      //teste de condição para retornar true
+      if (age >= 18) {
+        document.write("verdadeiro");
+      }
+      //se a primeira condição não atender como verdadeiro executa essa ação
+      else {
+        document.write("falso");
+      }
+      /* nessa condição afimar que se age não é igual a 18
+    if (age !== "18"){
+        document.write("verdadeiro")
+    } */
+    </script>
+    <br />
+    Arrays
+    <br />
+    <script>
+      //a constante names é uma array. O primeiro da lista sempre vai ser "zero".
+      const names = [
+        "Giovane",
+        "Viviane",
+        "Cristiane",
+        "Eliandro",
+        "Nathan",
+        "Nicolas",
+      ];
+      document.write(names[4]);
+      document.write(names[4 + 1]);
+      //push inclui um objeto a array
+      document.write(names.push("Nilda"));
+      document.write(names[6]);
+      //pop vai remover o último elemento
+      document.write(names.pop());
+      document.write(names[5]);
+      document.write(names.pop());
+      document.write(names[6]);
+      document.write(names[5]);
+      //length vai printar quantos objetos existem na array
+      document.write(names.length);
+      const name = "giovane";
+      const nameArray = Array.from(name);
+      document.write(nameArray);
+    </script>
+  </body>
+</html>
