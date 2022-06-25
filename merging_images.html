@@ -1,0 +1,41 @@
+<!--
+//Três argumentos: elemento, destino coordenadas (x,y).
+context.drawImage(img_elem, dx, dy);
+
+// Cinco arguementos: elemento, destino coordenadas (x,y), e destino 
+// largura e algura (isso se você deseja redimensionar a imagem).
+context.drawImage(img_elem, dx, dy, dl, da);
+
+// Nove argumentos: elemento, origem coordenadas (x,y), origem largura e 
+// altura (para cropar), destino coordenadas (x,y), e destino largura 
+// e algura (redimensionar).
+context.drawImage(img_elem, ox, oy, ol, oa, dx, dy, dl, da);
+
+Código abaixo: 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    canvas {
+        border: 1px solid black;
+    }
+  </style>
+    <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
+</head>
+  <body>
+    <canvas id="canvasId" height="300" width="500"></canvas>
+    <script type="text/javascript">
+      var can = document.getElementById('canvasId');
+      var context = can.getContext('2d');
+
+      context.fillRect(50, 50, 500, 500); // preechendo o background com a cor preta
+
+      var img = new Image();
+      img.src = "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded"; //imagem com fundo transparente
+      img.onload = function() {
+      context.drawImage(img, 0, 0);
+      }
+    </script>
+  </body>
+</html>
