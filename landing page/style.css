@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Blaka&family=Yellowtail&family=Smooch:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #043d20 16.62%, #95e64a 85.61%);
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+.header-logo {
+    font-family: 'Blaka', cursive;
+    color: #E7FFEB;
+    font-weight: 400;
+    font-size: 78px;
+}
+.header-menu {
+    display: flex;
+    gap: 32px;
+}
+.header-menu-item {
+    font-family: 'Oswald', sans-serif;
+    color: #E7FFEB;
+    font-weight: 400;
+    font-size: 18px;
+}
+.context {
+    border-top: 0.4px solid #95e64a;
+    margin-bottom: 48px;
+}
+.context-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.context-principal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.context-principal-body-title {
+    font-family: 'Smooch', cursive;
+    color: #E7FFEB;
+    font-weight: 400;
+    font-size: 74px;
+}
+.context-principal-body-subtitle {
+    font-family: 'Yellowtail', cursive;
+    color: #E7FFEB;
+    font-weight: 400;
+    font-size: 24px;
+}
+.context-principal-body-button {
+    background-color: #E7FFEB;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: #2F2325;
+    font-weight: 400;
+    font-size: 24px;
+}
+.context-principal-body-button:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+}
+.context-principal-image{
+    padding-top: 16px;
+    height: 350px;
+}
+.context-secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+.context-secondary-title {
+    border-top: 0.4px solid #95e64a;
+    padding-top: 48px;
+    font-family: 'Oswald', sans-serif;
+    color: #E7FFEB;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.context-secondary-paragraph {
+    font-family: 'Oswald', sans-serif;
+    color: #E7FFEB;
+    font-weight: 300;
+    font-size: 18px;
+}
+.footer-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
